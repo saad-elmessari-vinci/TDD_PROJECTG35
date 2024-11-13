@@ -152,4 +152,10 @@ describe("SingleMinutesRow function should return the answer ", function () {
 
     expect(result).toBe("YYRYYRYYOOO");
   });
+
+  it("Should return 'OOOO' for 0 minute",function(){
+    const result=main.singleHoursRow(0);
+    
+    expect(result).toBe("OOOO");
+  })
 });

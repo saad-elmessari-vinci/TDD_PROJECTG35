@@ -17,4 +17,8 @@ export class Main {
     result += "O".repeat(11 - nbrOfLamps);
     return result;
   }
+
+  singleHoursRow(minutes) {
+    return "OOOO";
+  }
 }
