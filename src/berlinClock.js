@@ -25,8 +25,7 @@ export class Main {
   }
 
   fiveHoursRow(hours) {
-    if (hours >= 5) return "ROOO";
-
-    return "OOOO";
+    const nbrOfLamps = Math.floor(hours/ 5);
+    return "R".repeat(nbrOfLamps) + "O".repeat(4 - nbrOfLamps);
   }
 }
