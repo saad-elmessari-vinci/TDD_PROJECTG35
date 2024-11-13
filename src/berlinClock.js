@@ -29,6 +29,8 @@ export class Main {
     return "R".repeat(nbrOfLamps) + "O".repeat(4 - nbrOfLamps);
   }
   secondsLight(seconds) {
+    if (seconds === 1) return "O";
+
     return "R";
   }
 }
