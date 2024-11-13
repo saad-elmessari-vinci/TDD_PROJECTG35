@@ -87,9 +87,9 @@ describe("SingleMinutesRow function should return the answer ", function () {
     expect(result).toBe("YOOOOOOOOOO");
   });
 
-  it("Should retun 'YOOOOOOOOOO' for 6 minutes", function(){
+  it("Should retun 'YOOOOOOOOOO' for 6 minutes", function () {
     const result = main.fiveMinutesRow(6);
-    
+
     expect(result).toBe("YOOOOOOOOOO");
-  })
+  });
 });
