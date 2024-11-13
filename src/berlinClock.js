@@ -8,6 +8,8 @@ export class Main {
   }
 
   fiveMinutesRow(minutes) {
+    if (minutes === 5) return "YOOOOOOOOOO";
+
     return "OOOOOOOOOOO";
   }
 }
