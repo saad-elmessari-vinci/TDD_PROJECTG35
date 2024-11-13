@@ -38,4 +38,10 @@ describe("SingleMinutesRow function should return the answer ", function () {
 
     expect(result).toBe("OOOO");
   });
+
+  it("Should return 'YYYY' for 14 minutes", function () {
+    const result = main.singleMinutesRow(14);
+
+    expect(result).toBe("YYYY");
+  });
 });
