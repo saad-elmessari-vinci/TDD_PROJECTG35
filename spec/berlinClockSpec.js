@@ -329,4 +329,16 @@ describe("SecondsLight function should return the answer", function () {
 
     expect(result).toBe("O");
   });
+
+  it("Should return 'R' for 4 seconds", function () {
+    const result = main.secondsLight(4);
+
+    expect(result).toBe("R");
+  });
+
+  it("Should return 'O' for 5 seconds", function () {
+    const result = main.secondsLight(5);
+
+    expect(result).toBe("O");
+  });
 });
