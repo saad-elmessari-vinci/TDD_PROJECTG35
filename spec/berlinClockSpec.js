@@ -365,4 +365,12 @@ describe("GetBerlinClock function should return the answer", function () {
 
     expect(result).toBe("RRRRORROOYYOOOOOOOOOYYYY");
   });
+
+  it("Should return 'ROOOORROOOOOOOOOOOOOYOOO' for Mon Dec 29 2008 02:01:24 GMT+0100 ", function () {
+    const timestamp = 1230512484* 1000;
+
+    const result = main.getBerlinClokDisplay(timestamp);
+
+    expect(result).toBe("ROOOORROOOOOOOOOOOOOYOOO");
+  });
 });
