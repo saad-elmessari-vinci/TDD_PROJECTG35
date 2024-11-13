@@ -323,4 +323,10 @@ describe("SecondsLight function should return the answer", function () {
 
     expect(result).toBe("R");
   });
+
+  it("Should return 'O' for 3 seconds", function () {
+    const result = main.secondsLight(3);
+
+    expect(result).toBe("O");
+  });
 });
