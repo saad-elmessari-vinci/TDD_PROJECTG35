@@ -19,8 +19,8 @@ export class Main {
   }
 
   singleHoursRow(hours) {
-    if (hours > 4) return "OOOO";
+    const nbOfRedLamps = hours % 5;
 
-    return "R".repeat(hours) + "O".repeat(4 - hours);
+    return "R".repeat(nbOfRedLamps) + "O".repeat(4 - nbOfRedLamps);
   }
 }

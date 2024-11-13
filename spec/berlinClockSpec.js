@@ -191,9 +191,15 @@ describe("SingleHoursRow function should return the answer", function () {
     expect(result).toBe("RRRR");
   });
 
-  it("Should return 'OOOO' for 5 hours",function(){
-    const result=main.singleHoursRow(5);
-    
+  it("Should return 'OOOO' for 5 hours", function () {
+    const result = main.singleHoursRow(5);
+
     expect(result).toBe("OOOO");
-  })
+  });
+
+  it("Should return 'ROOO' for 6 hours", function () {
+    const result = main.singleHoursRow(6);
+
+    expect(result).toBe("ROOO");
+  });
 });
