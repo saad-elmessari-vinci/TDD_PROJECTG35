@@ -135,13 +135,15 @@ describe("SingleMinutesRow function should return the answer ", function () {
     expect(result).toBe("YYROOOOOOOO");
   });
 
-  
   it("Should return 'YYROOOOOOOO' for 16 minutes", function () {
     const result = main.fiveMinutesRow(16);
 
     expect(result).toBe("YYROOOOOOOO");
   });
 
+  it("Should return 'YYRYOOOOOOO' for 20 minutes", function () {
+    const result = main.fiveMinutesRow(20);
 
-
+    expect(result).toBe("YYRYOOOOOOO");
+  });
 });
