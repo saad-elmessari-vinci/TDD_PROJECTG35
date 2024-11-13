@@ -204,8 +204,14 @@ describe("SingleHoursRow function should return the answer", function () {
   });
 
   it("Should return 'RRRO' for 8 hours", function () {
-    const result=main.singleHoursRow(8);
-    
+    const result = main.singleHoursRow(8);
+
     expect(result).toBe("RRRO");
+  });
+
+  it("Should return 'OOOO' for 10 hours", function () {
+    const result = main.singleHoursRow(10);
+
+    expect(result).toBe("OOOO");
   });
 });
