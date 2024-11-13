@@ -354,3 +354,15 @@ describe("SecondsLight function should return the answer", function () {
     expect(result).toBe("O");
   });
 });
+
+describe("GetBerlinClock function should return the answer", function () {
+  const main = new Main();
+
+  it("Should return 'RRRRORROOYYOOOOOOOOOYYYY' for Wed Nov 13 2024 17:14:44 GMT+0100 ", function () {
+    const timestamp = 1731514484 * 1000;
+
+    const result = main.getBerlinClokDisplay(timestamp);
+
+    expect(result).toBe("RRRRORROOYYOOOOOOOOOYYYY");
+  });
+});
