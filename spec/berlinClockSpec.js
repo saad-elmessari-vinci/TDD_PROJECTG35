@@ -1,7 +1,7 @@
 import { Main } from "../src/berlinClock.js";
 
 describe("SingleMinutesRow function should return the answer ", function () {
-    const main = new Main();
+  const main = new Main();
 
   it("Should return 'OOOO' for 0 minute", function () {
     const result = main.singleMinutesRow(0);
@@ -33,4 +33,9 @@ describe("SingleMinutesRow function should return the answer ", function () {
     expect(result).toBe("YYYY");
   });
 
+  it("Should return 'OOOO' for 5 minutes", function () {
+    const result = main.singleMinutesRow(5);
+
+    expect(result).toBe("OOOO");
+  });
 });
