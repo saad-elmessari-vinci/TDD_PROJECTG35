@@ -12,11 +12,7 @@ export class Main {
     let result = "";
 
     for (let i = 1; i <= nbrOfLamps; i++) {
-      if (i % 3 === 0) {
-        result += "R";
-      } else {
-        result += "Y";
-      }
+      result += i % 3 === 0 ? "R" : "Y";
     }
     result += "O".repeat(11 - nbrOfLamps);
     return result;
