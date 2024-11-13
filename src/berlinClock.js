@@ -33,4 +33,25 @@ export class Main {
 
     return "O";
   }
+
+  extractTimeFromTimestamp(timestamp) {
+    const date = new Date(timestamp);
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    return { hours, minutes, seconds };
+  }
+
+  getBerlinClokDisplay(timestamp) {
+    const { hours, minutes, seconds } =
+      this.extractTimeFromTimestamp(timestamp);
+
+    return (
+      this.secondsLight(seconds) +
+      this.fiveHoursRow(hours) +
+      this.singleHoursRow(hours) +
+      this.fiveMinutesRow(minutes) +
+      this.singleMinutesRow(minutes)
+    );
+  }
 }
