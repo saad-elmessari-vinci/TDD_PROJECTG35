@@ -146,4 +146,10 @@ describe("SingleMinutesRow function should return the answer ", function () {
 
     expect(result).toBe("YYRYOOOOOOO");
   });
+
+  it("Should return 'YYRYYRYYOOO' for 40 minutes", function () {
+    const result = main.fiveMinutesRow(40);
+
+    expect(result).toBe("YYRYYRYYOOO");
+  });
 });
