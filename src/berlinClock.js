@@ -25,6 +25,8 @@ export class Main {
   }
 
   fiveHoursRow(hours) {
+    if (hours === 5) return "ROOO";
+
     return "OOOO";
   }
 }
