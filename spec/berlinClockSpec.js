@@ -296,4 +296,10 @@ describe("FiveHoursRow function should return the answer", function () {
 
     expect(result).toBe("RRRO");
   });
+
+  it("Should return 'RRRR' for 21 hours", function () {
+    const result = main.fiveHoursRow(21);
+
+    expect(result).toBe("RRRR");
+  });
 });
