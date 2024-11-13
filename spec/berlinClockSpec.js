@@ -160,10 +160,16 @@ describe("FiveMinutesRow function should return the answer", function () {
 
 describe("SingleHoursRow function should return the answer", function () {
   const main = new Main();
-  
-  it("Should return 'OOOO' for 0 minute", function () {
+
+  it("Should return 'OOOO' for 0 hours", function () {
     const result = main.singleHoursRow(0);
 
     expect(result).toBe("OOOO");
+  });
+
+  it("Should return 'ROOO' for 1 hour", function () {
+    const result = main.singleHoursRow(1);
+
+    expect(result).toBe("ROOO");
   });
 });

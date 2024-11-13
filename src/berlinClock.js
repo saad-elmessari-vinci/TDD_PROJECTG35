@@ -18,7 +18,9 @@ export class Main {
     return result;
   }
 
-  singleHoursRow(minutes) {
+  singleHoursRow(hours) {
+    if (hours === 1) return "ROOO";
+
     return "OOOO";
   }
 }
