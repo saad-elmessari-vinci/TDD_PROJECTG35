@@ -25,7 +25,7 @@ export class Main {
   }
 
   fiveHoursRow(hours) {
-    const nbrOfLamps = Math.floor(hours/ 5);
+    const nbrOfLamps = Math.floor(hours / 5);
     return "R".repeat(nbrOfLamps) + "O".repeat(4 - nbrOfLamps);
   }
 }
