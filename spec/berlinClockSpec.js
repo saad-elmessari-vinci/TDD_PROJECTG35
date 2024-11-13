@@ -305,16 +305,22 @@ describe("FiveHoursRow function should return the answer", function () {
 });
 
 describe("SecondsLight function should return the answer", function () {
-  const main=new Main();
+  const main = new Main();
   it("Should return 'R' for 0 seconds", function () {
-    const result=main.secondsLight(0);
-    
+    const result = main.secondsLight(0);
+
     expect(result).toBe("R");
   });
 
-  it("Should return 'O' for 1 second",function(){
-    const result=main.secondsLight(1);
+  it("Should return 'O' for 1 second", function () {
+    const result = main.secondsLight(1);
 
     expect(result).toBe("O");
-  })
+  });
+
+  it("Should return 'R' for 2 seconds", function () {
+    const result = main.secondsLight(2);
+
+    expect(result).toBe("R");
+  });
 });
