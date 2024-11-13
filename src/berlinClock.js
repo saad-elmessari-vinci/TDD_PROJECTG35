@@ -28,4 +28,7 @@ export class Main {
     const nbrOfLamps = Math.floor(hours / 5);
     return "R".repeat(nbrOfLamps) + "O".repeat(4 - nbrOfLamps);
   }
+  secondsLight(seconds) {
+    return "R";
+  }
 }

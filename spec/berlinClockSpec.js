@@ -303,3 +303,12 @@ describe("FiveHoursRow function should return the answer", function () {
     expect(result).toBe("RRRR");
   });
 });
+
+describe("SecondsLight function should return the answer", function () {
+  const main=new Main();
+  it("Should return 'O' for 0 seconds", function () {
+    const result=main.secondsLight(0);
+    
+    expect(result).toBe("R");
+  });
+});
