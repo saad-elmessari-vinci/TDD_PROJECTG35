@@ -50,6 +50,10 @@ describe("SingleMinutesRow function should return the answer ", function () {
 
     expect(result).toBe("YYOO");
   });
+});
+
+describe("FiveMinutesRow function should return the answer", function () {
+  const main = new Main();
 
   it("Should return 'OOOOOOOOOOO' for 0 minutes", function () {
     const result = main.fiveMinutesRow(0);
@@ -152,10 +156,14 @@ describe("SingleMinutesRow function should return the answer ", function () {
 
     expect(result).toBe("YYRYYRYYOOO");
   });
+});
 
-  it("Should return 'OOOO' for 0 minute",function(){
-    const result=main.singleHoursRow(0);
-    
+describe("SingleHoursRow function should return the answer", function () {
+  const main = new Main();
+  
+  it("Should return 'OOOO' for 0 minute", function () {
+    const result = main.singleHoursRow(0);
+
     expect(result).toBe("OOOO");
-  })
+  });
 });
