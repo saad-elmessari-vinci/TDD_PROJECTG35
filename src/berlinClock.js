@@ -19,10 +19,8 @@ export class Main {
   }
 
   singleHoursRow(hours) {
-    if (hours === 1)  return "ROOO";
-     
-    if (hours === 2) return "RROO";
+    let result = "";
 
-    return "OOOO";
+    return (result += "R".repeat(hours) + "O".repeat(4-hours));
   }
 }

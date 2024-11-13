@@ -173,9 +173,21 @@ describe("SingleHoursRow function should return the answer", function () {
     expect(result).toBe("ROOO");
   });
 
-  it("Should return 'RROO' for 2 hours",function(){
-    const result=main.singleHoursRow(2);
-    
+  it("Should return 'RROO' for 2 hours", function () {
+    const result = main.singleHoursRow(2);
+
     expect(result).toBe("RROO");
+  });
+
+  it("Should return 'RRRO' for 3 hours", function () {
+    const result = main.singleHoursRow(3);
+
+    expect(result).toBe("RRRO");
+  });
+
+  it("Should return 'RRRR' for 4 hours",function(){
+    const result=main.singleHoursRow(4);
+    
+    expect(result).toBe("RRRR");
   })
 });
