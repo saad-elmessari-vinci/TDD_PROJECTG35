@@ -341,4 +341,10 @@ describe("SecondsLight function should return the answer", function () {
 
     expect(result).toBe("O");
   });
+
+  it("Should return 'R' for 26 seconds", function () {
+    const result = main.secondsLight(26);
+
+    expect(result).toBe("R");
+  });
 });
