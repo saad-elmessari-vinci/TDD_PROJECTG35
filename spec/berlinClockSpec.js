@@ -221,3 +221,13 @@ describe("SingleHoursRow function should return the answer", function () {
     expect(result).toBe("RRRR");
   });
 });
+
+describe("FiveHoursRow function should return the answer", function () {
+  const main = new Main();
+
+  it("Should return 'OOOO' for O hours", function () {
+    const result = main.fiveHoursRow(0);
+
+    expect(result).toBe("OOOO");
+  });
+});

@@ -23,4 +23,8 @@ export class Main {
 
     return "R".repeat(nbOfRedLamps) + "O".repeat(4 - nbOfRedLamps);
   }
+
+  fiveHoursRow(hours) {
+    return "OOOO";
+  }
 }
