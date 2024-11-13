@@ -51,10 +51,15 @@ describe("SingleMinutesRow function should return the answer ", function () {
     expect(result).toBe("YYOO");
   });
 
-  it("Should return 'OOOOOOOOOOO' for 0 minutes", function (){
+  it("Should return 'OOOOOOOOOOO' for 0 minutes", function () {
     const result = main.fiveMinutesRow(0);
-    
-    expect(result).toBe("OOOOOOOOOOO");
-  })
 
+    expect(result).toBe("OOOOOOOOOOO");
+  });
+
+  it("Should return 'OOOOOOOOOOO' for 1 minute", function () {
+    const result = main.fiveMinutesRow(1);
+
+    expect(result).toBe("OOOOOOOOOOO");
+  });
 });
