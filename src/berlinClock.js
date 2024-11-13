@@ -8,7 +8,9 @@ export class Main {
   }
 
   fiveMinutesRow(minutes) {
-    if (minutes >= 5 ) return "YOOOOOOOOOO";
+    if (minutes >= 10) return "YYOOOOOOOOO";
+
+    if (minutes >= 5) return "YOOOOOOOOOO";
 
     return "OOOOOOOOOOO";
   }
